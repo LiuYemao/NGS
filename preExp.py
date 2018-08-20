@@ -60,7 +60,8 @@ def main(wfname):
            'FPKM_TH433_C': TH433_Cvalue}
     df = pd.DataFrame(dat)
     mydf = df.dropna(axis=0, how='any')
-    mydf.to_csv(wfname, index=False)
+    df.to_csv('{}.csv'.format(wfname), index=False)
+    my.to_csv('{}.allrows.csv'.format(wfname), index = False)
 
 if __name__ == '__main__':
 
