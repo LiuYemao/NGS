@@ -35,20 +35,20 @@ def main(wfname):
                     bogenes.append(ll[1])
                     bnaA.append(ll[2])
                     bnaC.append(ll[3])
-    br_value = [bra.iloc[i, 'g_m'] for i in brgenes]
-    bo_value = [bol.iloc[i, 'g_m'] for i in bogenes]
-    TH008_Avalue = [TH008.iloc[i, 'g_m'] for i in bnaA]
-    TH008_Cvalue = [TH008.iloc[i, 'g_m'] for i in bnaC]
-    TD013_Avalue = [TD013.iloc[i, 'g_m'] for i in bnaA]
-    TD013_Cvalue = [TD013.iloc[i, 'g_m'] for i in bnaC]
-    TH363_Avalue = [TH363.iloc[i, 'g_m'] for i in bnaA]
-    TH363_Cvalue = [TH363.iloc[i, 'g_m'] for i in bnaC]
-    TH429_Avalue = [TH429.iloc[i, 'g_m'] for i in bnaA]
-    TH429_Cvalue = [TH429.iloc[i, 'g_m'] for i in bnaC]
-    TH430_Avalue = [TH430.iloc[i, 'g_m'] for i in bnaA]
-    TH430_Cvalue = [TH430.iloc[i, 'g_m'] for i in bnaC]
-    TH433_Avalue = [TH433.iloc[i, 'g_m'] for i in bnaA]
-    TH433_Cvalue = [TH433.iloc[i, 'g_m'] for i in bnaC]
+    br_value = [bra.loc[i, 'g_m'] for i in brgenes]
+    bo_value = [bol.loc[i, 'g_m'] for i in bogenes]
+    TH008_Avalue = [TH008.loc[i, 'g_m'] for i in bnaA]
+    TH008_Cvalue = [TH008.loc[i, 'g_m'] for i in bnaC]
+    TD013_Avalue = [TD013.loc[i, 'g_m'] for i in bnaA]
+    TD013_Cvalue = [TD013.loc[i, 'g_m'] for i in bnaC]
+    TH363_Avalue = [TH363.loc[i, 'g_m'] for i in bnaA]
+    TH363_Cvalue = [TH363.loc[i, 'g_m'] for i in bnaC]
+    TH429_Avalue = [TH429.loc[i, 'g_m'] for i in bnaA]
+    TH429_Cvalue = [TH429.loc[i, 'g_m'] for i in bnaC]
+    TH430_Avalue = [TH430.loc[i, 'g_m'] for i in bnaA]
+    TH430_Cvalue = [TH430.loc[i, 'g_m'] for i in bnaC]
+    TH433_Avalue = [TH433.loc[i, 'g_m'] for i in bnaA]
+    TH433_Cvalue = [TH433.loc[i, 'g_m'] for i in bnaC]
 
     dat = {"genes_Br":brgenes, "FPKM_Br":br_value, 'genes_Bo':bogenes, 'FPKM_Bo':bo_value,
            'genes_BnA':bnaA, 'FPKM_TD013_A':TD013_Avalue, 'FPKM_TH008_A':TH008_Avalue,
